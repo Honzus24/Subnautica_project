@@ -50,6 +50,7 @@ body{
 .part > .part_left {
     width: 50%;
     height: 100%;
+    overflow: hidden;
 }
 .part > .part_right {
     position: relative;
