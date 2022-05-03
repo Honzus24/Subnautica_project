@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="StyleMainPage.css">
+    <link rel="stylesheet" href="Styles/StyleMainPage.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,17 +17,21 @@
 </head>
 
 <body>
-    <div class="topImg"></div>
+    
     <div class="mainText">
+        <div class="topImg">
+            <img src="images/logo.png" alt="Subnautica logo">
+        </div>
+
         <p>Subnautica is a wonderful game!
             But sometimes it may just be too complicated and that's why this page exists.
             Here you will learn everything you need to know about the game.
             Just scroll down and start exploring!</p>
     </div>
-    <div class="bubbleTransition"></div>
+    <div id="bubbles"></div>
     <div class="part">
         <div class="part_left">
-            <img class="mirrorX" src="images/Subnautica Cuddlefish complete.png" alt="cuddlefish">
+            <img class="mirrorX" src="images/zralek.jpg" alt="cuddlefish">
         </div>
         <div class="part_right">
             <p>Fauna
@@ -38,7 +42,7 @@
     <div class="divider"></div>
     <div class="part mirrorX">
         <div class="part_left">
-            <img class="mirrorX" src="images/Subnautica Cuddlefish complete.png" alt="cuddlefish">
+            <img class="mirrorX" src="images/landscape.jpeg" alt="zralek">
         </div>
         <div class="part_right mirrorX">
             <p>Flora
@@ -47,6 +51,8 @@
                 href="Flora.html">More</a>
         </div>
     </div>
+
+    <script src="Scripts/mainPage.js"></script>
 </body>
 
 </html>
