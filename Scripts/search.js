@@ -8,11 +8,19 @@ let searchingOut = false;
 arrow.addEventListener("click", function(){
 	if (searchingOut == true) {
 		searchingOut = false;
-		display.style.top = "-200px";
+		display.style.top = "-250px";
+
+		display.style.animationName = "searchHide";
+		display.style.animationFillMode = "forward";
+		display.style.animationDuration = "1s";
 	}
 	else{
 		searchingOut = true;
 		display.style.top = "50px";
+
+		display.style.animationName = "searchReveal";
+		display.style.animationFillMode = "forward";
+		display.style.animationDuration = "1s";
 	}
 });
 
@@ -40,6 +48,7 @@ searchbar.addEventListener("input", function () {
 			found = searchable[i];
 			console.log(name);
 			display.children[0].innerText = searchable[i].children[1].children[0].innerText + " - " + searchable[i].children[1].children[1].innerText;
+			break;
 		}
 	}
 });

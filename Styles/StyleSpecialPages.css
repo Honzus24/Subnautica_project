@@ -9,6 +9,7 @@ p{
 body{
     margin: 0px;
     padding: 0px;
+    background-image: url("../images/pda.webp");
 }
 .topText{
     display: flex;
@@ -75,7 +76,6 @@ body{
 .divider {
     width: 100%;
     height: 20px;
-    /*background-color: rgb(50, 185, 140);*/
     background-image: url("../images/divider.png");
     background-size: contain;
 }
@@ -118,7 +118,7 @@ body{
 
 #searchResult{
     position: absolute;
-    top: -200px;
+    top: -250px;
     left: 50%;
     display: flex;
     flex-direction: column;
@@ -126,19 +126,27 @@ body{
     width: 40%;
     height: 500%;
     background-image: url("../images/pda.webp");
+    border: 2px solid white;
 }
 #searchResult > .bodyPart{
     padding-left: 5px;
     overflow-y: scroll;
 }
 #searchResult > .arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     position: absolute;
-    top: 100%;
+    top: 108.5%;
     left: 25%;
     width: 50%;
     height: 45px;
-
-    background-color: aquamarine;
+}
+#searchResult > .arrow > img{
+    width: fit-content;
+    transform: scale(50%);
+    height: auto;
 }
 
 @media (max-width: 700px){
@@ -172,4 +180,15 @@ body{
 {
     0% {opacity: 0%;}
     100% {opacity: 100%;}
+}
+
+@keyframes searchReveal
+{
+    0% {top: -250px;}
+    100% {top: 50px;}
+}
+@keyframes searchHide
+{
+    0% {top: 50px;}
+    100% {top: -250px;}
 }

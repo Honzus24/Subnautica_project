@@ -5,8 +5,7 @@ var observer = new IntersectionObserver(function (entries) {
 			entries[index].target.style.animationFillMode = "forwards";
 		}
 	}
-
-}, { threshold: [0.2] });
+}, { threshold: [0.4] });
 
 const parts = document.getElementsByClassName("part")
 
